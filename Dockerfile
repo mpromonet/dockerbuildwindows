@@ -21,5 +21,5 @@ RUN git config --global core.autocrlf false \
        && git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git --depth 1 C:\depot_tools \
        && SETX PATH "%PATH%;C:\depot_tools" 
 # workaround bootstraping that delete the cipd.ps1 file       
-RUN powershell -NoProfile -ExecutionPolicy RemoteSigned -Command C:\depot_tools\cipd.ps1 -CipdBinary C:\depot_tools\.cipd_client.exe -BackendURL https://chrome-infra-packages.appspot.com -VersionFile C:\depot_tools\cipd_client_version   
-
+#RUN powershell -NoProfile -ExecutionPolicy RemoteSigned -Command C:\depot_tools\cipd.ps1 -CipdBinary C:\depot_tools\.cipd_client.exe -BackendURL https://chrome-infra-packages.appspot.com -VersionFile C:\depot_tools\cipd_client_version   
+RUN gclient --version
