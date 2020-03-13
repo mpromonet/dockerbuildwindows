@@ -1,5 +1,5 @@
 # build
-FROM mcr.microsoft.com/windows/servercore:ltsc2019
+FROM mcr.microsoft.com/windows/servercore:1909
 LABEL maintainer=michel.promonet@free.fr
 
 ENV chocolateyUseWindowsCompression="true"
