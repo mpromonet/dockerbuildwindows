@@ -1,5 +1,5 @@
 # build
-FROM mcr.microsoft.com/windows/servercore:2019
+FROM cirrusci/windowsservercore:2019
 LABEL maintainer=michel.promonet@free.fr
 
 ENV chocolateyUseWindowsCompression="true"
